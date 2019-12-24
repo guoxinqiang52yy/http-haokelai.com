@@ -1,0 +1,30 @@
+<view class="openShop_body">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swiper'>
+        <block tt:for="{{imgUrls}}">
+            <swiper-item class="swiper-item">
+                <image alt="{{item.alt}}" src="{{item.url}}" class="slide-image" bindtap='opennew' data-act_id='{{item.act_id}}' data-type='{{item.type}}' data-id='{{item.id}}'/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="openShop_info">
+        <view class="openshop_nameIcon">
+            <!--<text class="openshop_name">{{items.company_icon}}</text>-->
+            {{items.company_name}}
+        </view>
+        <view class="openShop_detail">
+            <view class="openShop_img">
+                <image alt="" src="{{openShop_list.image}}" />
+            </view>
+            <view class="openShop_detailRight">
+                <view><text>商品名称:</text>{{openShop_list.product_name}}</view>
+                <view><text>商品价格:</text>{{openShop_list.price}}</view>
+                <view><text>商品说明:</text>{{openShop_list.info}}</view>
+                <!--购买-->
+                <view class="btn-area">
+                    <button formType="submit" bindtap="createcars">购买</button>
+                </view>
+            </view>
+        </view>
+    </view>
+
+</view>

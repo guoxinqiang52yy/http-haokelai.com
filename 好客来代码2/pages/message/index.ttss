@@ -1,0 +1,46 @@
+.page-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.page-body view{
+    margin-bottom: 15rpx;
+}
+.page-section-title{
+    margin-left: 20rpx;
+    font-size: 24rpx;
+    margin-top: 20rpx;
+}
+.page-cell__bd{
+    padding: 20rpx;
+    width: 100%;
+}
+.page-cell__bd textarea{
+    border: 1rpx solid #eee;
+    border-radius: 10rpx;
+    font-size: 24rpx;
+    padding: 10rpx;
+}
+.btn-area button{
+    width: 94%;
+    margin-left: 3%;
+    font-size: 24rpx;
+    color: #fff;
+    padding: 10rpx 0rpx;
+}
+.page-input-phone{
+    display: inline-block;
+    margin-top: 20rpx;
+    border:1px solid #eee;
+    border-radius:10rpx;
+    font-size: 24rpx;
+    padding-left: 10rpx;
+    margin-left: 20rpx;
+    width: 710rpx;
+}
+.btn-area button{
+    font-size: 40rpx;
+}

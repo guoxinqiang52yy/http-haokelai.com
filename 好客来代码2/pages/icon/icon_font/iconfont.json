@@ -1,0 +1,72 @@
+{
+  "id": "1549570",
+  "name": "抖音/劵多宝",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12037044",
+      "name": "餐饮",
+      "font_class": "canyin",
+      "unicode": "e756",
+      "unicode_decimal": 59222
+    },
+    {
+      "icon_id": "12037049",
+      "name": "分类",
+      "font_class": "fenlei",
+      "unicode": "e757",
+      "unicode_decimal": 59223
+    },
+    {
+      "icon_id": "12037052",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e758",
+      "unicode_decimal": 59224
+    },
+    {
+      "icon_id": "12037060",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e759",
+      "unicode_decimal": 59225
+    },
+    {
+      "icon_id": "12037061",
+      "name": "生活",
+      "font_class": "shenghuo",
+      "unicode": "e75a",
+      "unicode_decimal": 59226
+    },
+    {
+      "icon_id": "12037472",
+      "name": "入驻",
+      "font_class": "ruzhu",
+      "unicode": "e765",
+      "unicode_decimal": 59237
+    },
+    {
+      "icon_id": "12037475",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e767",
+      "unicode_decimal": 59239
+    },
+    {
+      "icon_id": "12037502",
+      "name": "订单",
+      "font_class": "dingdan",
+      "unicode": "e76c",
+      "unicode_decimal": 59244
+    },
+    {
+      "icon_id": "12037524",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e76f",
+      "unicode_decimal": 59247
+    }
+  ]
+}

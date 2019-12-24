@@ -1,0 +1,40 @@
+<view class="container">
+    <view tt:if="{{nonecars!=true}}"
+          tt:for="{{items}}"
+          class="aui-list-goods"
+          bindtap="onItemClick"
+          data-id="{{item.id}}"
+          tt:for-item="item">
+        <view class="openShop_detail">
+            <view class="openShop_img">
+                <image alt="" src="{{item.product_image}}"/>
+            </view>
+            <view class="openShop_detailRight">
+                <view>
+                    <text>商品名称:</text>
+                    {{item.product_name}}
+                </view>
+                <view>
+                    <text>商品价格:</text>
+                    {{item.product_price}}
+                </view>
+                <view>
+                    <text>上架时间:</text>
+                    {{item.add_time}}
+                </view>
+                <view class="btn-area" tt:if="{{item.status==0}}">
+                    <button type="primary">未使用</button>
+                </view>
+                <view class="btn-area" tt:if="{{item.status==1}}">
+                    <button type="warn">已使用</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!--数据为空-->
+<view class="container_empty">
+    <view class="empty_list" tt:if="{{nonecars==true}}">
+        <image src="../img/data_empty.png"></image>
+    </view>
+</view>

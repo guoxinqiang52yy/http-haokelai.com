@@ -1,0 +1,11 @@
+{
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "tta6c1d07c39eb4d45",
+	"projectname": "好客来"
+}

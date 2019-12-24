@@ -1,0 +1,30 @@
+<!--<view class="container">
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class="page-section">
+        <view class="page-section-title">联系方式</view>
+        <input name="contact_way" class="page-input-phone"  value="{{contact_way}}"/>
+        <view class="page-section-title">留言内容</view>
+        <view class="page-cells page-cells_after-title">
+          <view class="page-cell page-cell_input">
+            <view class="page-cell__bd">
+              <textarea style="width:100%" name="liuyan"
+                value="{{liuyan}}"
+            />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="btn-area">
+        <button formType="submit">提交</button>
+      </view>
+    </form>
+  </view>
+</view>-->
+
+  <view class="page-body">
+    <view>地址:天津市东丽区东丽开发区帝达东谷创享天地</view>
+    <view>联系人:郭先生</view>
+    <view>电话:13312129160</view>
+  </view>
+

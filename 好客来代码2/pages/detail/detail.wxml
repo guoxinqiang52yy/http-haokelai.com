@@ -1,0 +1,40 @@
+<import src="../../wxParse/wxParse.wxml" />
+<import src="../../dist/quantity/index.wxml" />
+<import src="../../dist/toptips/index.wxml" />
+
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <swiper-item>
+        <image src="{{image}}" class="slide-image" />
+      </swiper-item>
+  </swiper>
+
+  <view class="zan-panel">
+    <view style="padding: 15px;">
+      <text class="title">{{goodName}}</text>
+      <text class="now">￥{{currentPrice}}</text>
+    </view>
+  </view>
+
+  <view class="zan-panel">
+    <view style="padding: 10px 0;">
+      <view class="zan-panel-title detailtitle">商品详情</view>
+      <view class="goodsinfo">{{goodsinfo}}</view>
+    </view>
+  </view>
+
+  <view class="zan-panel">
+    <view style="padding: 10px 0;">
+      <view class="zan-panel-title detailtitle">所属分类</view>
+      <view class="goodsinfo">{{goodsTypeName}}</view>
+    </view>
+  </view>
+</view>
+
+<view class="bot-bar">
+  <view class="dlog_btn">
+    <button bindtap="createcars" class="zan-btn zan-btn--large zan-btn--danger">立即购买</button>
+  </view>
+</view>
+
+<template is="zan-toptips" data="{{ zanTopTips }}"></template>

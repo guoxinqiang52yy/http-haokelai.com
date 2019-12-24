@@ -1,0 +1,68 @@
+.openShop_body{
+    padding:24rpx;
+    box-sizing: border-box;
+}
+.swiper{
+    width: 100%;
+    height: 303rpx
+}
+.swiper-item{
+    height: 303rpx
+}
+.slide-image{
+    width: 100%;
+    height: 100%;
+}
+.openShop_info,.openShop_detailRight{
+    display: flex;
+    flex-direction: column;
+}
+.openShop_info{
+    margin-top:20rpx;
+}
+.openshop_nameIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 12rpx;
+    background:linear-gradient(90deg,rgba(96,157,248,1),rgba(84,183,235,1));
+    color: #FFFFFF;
+    margin:20rpx 0 20rpx 0;
+    font-size:40rpx;
+}
+.openshop_name{
+
+}
+.openShop_detail{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.openShop_img{
+    width: 30%;
+    height:200rpx;
+}
+.openShop_img image{
+    width: 100%;
+    height: 100%;
+}
+.openShop_detailRight{
+    width: 65%;
+    justify-content: space-around;
+}
+.openShop_detailRight view{
+    font-size:25rpx;
+    color: #999999;
+}
+.openShop_detailRight text{
+    color: #000;
+    font-weight: 500;
+}
+
+.btn-area button{
+    width: 50%;
+    font-size: 40rpx;
+    color: #fff;
+    padding: 10rpx 0rpx;
+}

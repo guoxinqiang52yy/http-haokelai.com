@@ -1,0 +1,102 @@
+<!--轮播-->
+<view class="container">
+    <view class="page-section">
+    <view class="info">
+        <swiper indicator-dots="{{indicatorDots}}"
+                autoplay="{{autoplay}}"
+                interval="{{interval}}"
+                duration="{{duration}}"
+                circular="{{circular}}">
+            <block tt:for="{{background}}">
+                <swiper-item>
+                    <view style="width:100%;">
+                        <image style="width:100%;" src="{{item.url}}" mode="widthFix" alt="{{item.alt}}"/>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+</view>
+    <!--快速导航-->
+    <view class="index_nav">
+        <navigator class="index_nav_list" url="{{item.url}}" tt:for="{{navList}}" wx:key="*this" open-type="switchTab">
+            <view class="index_nav_image">
+                <!--<image src="{{item.image}}"/>-->
+                <i class="iconfont {{item.image}}"></i>
+            </view>
+            <view class="index_navigator">
+                {{item.navName}}
+            </view>
+        </navigator>
+    </view>
+    <!--广告图片-->
+    <view class="advertisement">
+        <image src="{{company.company_icon}}" alt=""></image>
+    </view>
+<view class="index_body">
+    <!--店铺信息-->
+    <view class="details_title">
+        <text>店铺信息</text>
+        <view class="active_title"></view>
+    </view>
+    <view class="aui-list-goods" bindtap="onClickShop">
+        <view class="openShop_detail">
+            <view class="openShop_img">
+                <image alt="" src="{{company.company_photo}}"/>
+            </view>
+            <view class="openShop_detailRight">
+                <view>
+                    <text>商店名称:</text>
+                    {{company.company_name}}
+                </view>
+                <view>
+                    <text>简介:</text>
+                    {{company.company_info}}
+                </view>
+                <view>
+                    <text>营业时间:</text>
+                    {{company.opening_hours}}
+                </view>
+                <view>
+                    <text>公司地址:</text>
+                    {{company.address}}
+                </view>
+            </view>
+        </view>
+    </view>
+    <!--热门商品-->
+    <view class="details_title">
+        <text>热门商品</text>
+        <view class="active_title"></view>
+    </view>
+    <view tt:for="{{items}}" class="aui-list-goods" bindtap="onItemClick" data-id="{{item.id}}" tt:for-item="item">
+        <view class="openShop_detail">
+            <view class="openShop_img">
+                <image alt="" src="{{item.image}}"/>
+            </view>
+            <view class="openShop_detailRight">
+                <view>
+                    <text>商品名称:</text>
+                    {{item.product_name}}
+                </view>
+                <view>
+                    <text>商品价格:</text>
+                    {{item.price}}
+                </view>
+                <view>
+                    <text>简介:</text>
+                    {{item.info}}
+                </view>
+                <view class="btn-area" tt:if="{{item.status==0}}">
+                    <button type="primary">未使用</button>
+                </view>
+                <view class="btn-area" tt:if="{{item.status==1}}">
+                    <button type="warn">已使用</button>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!--qita-->
+
+</view>
+</view>

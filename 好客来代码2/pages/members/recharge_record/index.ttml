@@ -1,0 +1,19 @@
+
+<view class="aui-flexView">
+    <view class="list">
+        <view class="left">
+            时间
+        </view>
+          <view class="left">
+            数额
+        </view>
+          <view class="left">
+            类型（消费、充值）
+        </view>
+    </view>
+
+
+
+
+
+</view>

@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_ynn0y1rg1517zaor.eot?t=1498113878687');
+  src: url('//at.alicdn.com/t/font_ynn0y1rg1517zaor.eot?t=1498113878687#iefix') format('embedded-opentype'),
+         url('//at.alicdn.com/t/font_ynn0y1rg1517zaor.woff?t=1498113878687') format('woff'),
+         url('//at.alicdn.com/t/font_ynn0y1rg1517zaor.ttf?t=1498113878687') format('truetype'),
+         url('//at.alicdn.com/t/font_ynn0y1rg1517zaor.svg?t=1498113878687#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-daifukuan:before {
+  content: "\e649";
+}
+
+.icon-daifahuo:before {
+  content: "\e635";
+}
+
+.icon-dengdai:before {
+  content: "\e609";
+}
+
+.icon-yiwancheng:before {
+  content: "\e60a";
+}
+
+.userinfo {
+  background:linear-gradient(90deg,rgba(96,157,248,1),rgba(84,183,235,1));
+  text-align: center;
+  padding: 60rpx 0;
+  color:#FFFFFF;
+}
+
+.avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+
+.nickname {
+  margin-top: 20rpx;
+}
+
+.zan-panel view, .zan-panel text {
+  font-size: 30rpx;
+}
+
+/*.order_icons {*/
+  /*display: flex;*/
+  /*justify-content: space-around;*/
+  /*background-color: #1cbbb4;*/
+/*}*/
+
+/*.icon {*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*!*padding: 0 100rpx;*!*/
+  /*background-color: #e8f4d9;*/
+/*}*/
+
+/*.icon i {*/
+  /*color: #666;*/
+  /*font-size: 35rpx;*/
+  /*text-align: center;*/
+/*}*/
+
+/*.icon text {*/
+  /*font-size: 30rpx;*/
+  /*color: #666;*/
+  /*text-align: center;*/
+/*}*/
+
+.order_item {
+  position: relative;
+}
+
+.my-badge {
+  top: 0;
+  right: 0;
+  font-size: 15rpx !important;
+}
+.look_codeBody{
+  width: 100vw;
+  height: 100vh;
+  padding:0 24px;
+  margin:0 auto;
+  background-color: rgba(0,0,0,0.7);
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 9999;
+}
+.look_codeBody image{
+  height: 50%;
+}
+.look_codeBodyClose{
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  font-size: 30rpx;
+  color:#fff;
+}
+.container_img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}

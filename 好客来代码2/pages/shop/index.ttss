@@ -1,0 +1,202 @@
+.shop_body{
+    padding:24rpx;
+    box-sizing: border-box;
+}
+.btn-area{
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+.info{
+    padding:0 24rpx;
+    box-sizing: border-box;
+ }
+.btn-area button{
+    width: 94%;
+    margin-left: 3%;
+    font-size: 40rpx;
+    color: #fff;
+    padding: 10rpx 0rpx;
+}
+.xieyichoosebtn{
+    margin-top: 20rpx;
+}
+.aui-goods-img{
+    margin-right: 10rpx;
+}
+.aui-goods-img img{
+    height: 226rpx;
+}
+.carslistcon{
+    margin-bottom: 20rpx;
+}
+.page-section-title{
+    font-size: 30rpx;
+    margin: 20rpx 20rpx 0rpx 20rpx;
+}
+
+#header{
+  width: 750rpx;
+  height: 180rpx;
+}
+#center{
+  width: 100%;
+  height: 160rpx;
+}
+#footer{
+  width: 750rpx;
+  height: 638rpx;
+}
+view image{
+  width: 100%;
+  height: 100%;
+}
+view{
+  font-family: '微软雅黑';
+  font-size: 26rpx;
+}
+.text{
+  width: 582rpx;
+  margin: 20rpx auto 0rpx;
+  line-height: 25rpx;
+}
+.one view{
+  margin-bottom: 36rpx;
+  text-align:center;
+}
+.two{
+  margin: 20rpx auto;
+}
+#margin{
+  width: 750rpx;
+  height: 100rpx;
+}
+/**app.ttss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+#photo{
+  overflow: hidden;
+  width: 750rpx;
+}
+.item{
+  width: 372rpx;
+  height: 693rpx;
+  float: left;
+}
+.item:nth-of-type(2n){
+  margin-left: 6rpx;
+}
+.item_pic{
+  width: 100%;
+  height: 571rpx;
+}
+.item_pic image{
+  width: 100%;
+  height: 100%;
+}
+#gongneng{
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+#gongneng view{
+  width: 250rpx;
+  height: 100%;
+}
+#gongneng view image{
+  width: 100%;
+  height: 100%;
+}
+
+.touxiang{
+  height:120rpx;
+}
+.touxiang image{
+  height: 100%;
+  width: 120rpx;
+  border-radius:10rpx;
+}
+/*开启店铺弹出框*/
+.model{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 999;
+    opacity: 0.5;
+    top: 0;
+    left:0;
+}
+.modalDlg{
+    width: 70%;
+    position: fixed;
+    top:350rpx;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.windowRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 110rpx;
+    width: 100%;
+}
+.back{
+    text-align: center;
+    color: #A0A0A0;
+    font-size: 30rpx;
+    margin: 30rpx;
+}
+.userTitle{
+    font-size: 30rpx;
+    color: #666;
+    margin: 30rpx;
+}
+.wishName{
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 30rpx;
+}
+.wish_put{
+    width: 80%;
+    font-size: 25rpx;
+    border: 1px solid;
+    border-radius: 10rpx;
+    padding-left: 10rpx;
+}
+.wishbnt{
+    width: 30%;
+    font-size: 30rpx;
+    margin-bottom: 30rpx;
+}
+.wishbnt_bt{
+    width: 30%;
+    background-color: #6658A6;
+    color: #ffffff;
+    font-size: 28rpx;
+    border: 0;
+}
+.navigator-hover {
+    color:blue;
+}
+.yx_lx{
+    color: rgb(67, 149, 255);
+}

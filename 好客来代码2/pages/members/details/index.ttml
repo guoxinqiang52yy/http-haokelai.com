@@ -1,0 +1,45 @@
+<view class="details_body">
+<view class="info">
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <swiper-item>
+        <view style="width:100%;"><image style="width:100%;"
+        src="{{product_image}}" mode="widthFix" /></view>
+      </swiper-item>
+  </swiper>
+</view>
+<view class="details_title">
+        <text>订单详情</text>
+        <view class="active_title"></view>
+    </view>
+<view class="info_info" tt:if="{{meaasgelistblock}}">
+    <view class='text one'>
+    <view class="orderinfo_info">
+        <view class="listcon">商品名称: {{product_name==null?"-":product_name}}</view>
+        <view>订单号：{{order_number==null?"-":order_number}}</view>
+        <view>下单时间：{{add_time==null?"-":add_time}}</view>
+        <view>价格：{{product_price==null?"-":product_price}}</view>
+        <view>使用状态：{{status==1?"使用中":"未使用"}}</view>
+    </view>
+</view>
+<!--按钮 -->
+<view class="btn-area" tt:if="{{bankabtnblock}}">
+    <!--<button type="primary" formType="submit" bindtap="createcars">办卡</button>-->
+</view> 
+<view class="btn-area" tt:else>
+    <button bindtap="look_code">查看订单二维码</button>
+    <button formType="submit" bindtap="createcars">再来一单</button>
+    <view class="look_codeBody" tt:if="{{look_codeBody}}">
+        <text class="look_codeBodyClose" bindtap="look_codeBodyClose">关闭</text>
+        <!--<image src="{{code_img}}" alt="" />-->
+        <!-- 存放二维码的图片-->
+        <view class='container_img'>
+            <image bindtap="previewImg" src="{{imagePath}}"></image>
+        </view>
+    </view>
+</view>
+    <!-- 画布，用来画二维码，只用来站位，不用来显示-->
+    <view class="canvas-box">
+        <canvas hidden="{{canvasHidden}}" style="width: 686rpx;height: 686rpx;background:#f1f1f1;" canvas-id="mycanvas" />
+    </view>
+</view>

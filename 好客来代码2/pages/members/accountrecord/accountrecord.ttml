@@ -1,0 +1,14 @@
+<view class="cu-timeline" tt:for="{{items}}">
+  <view class="cu-time">{{item.add_time}}</view>
+  <view  tt:if="{{item.type==2}}" class="cu-item text-grey cuIcon-evaluate_fill">
+    <view class="content bg-grey shadow-blur">
+      <text>您在本店消费了 {{item.money}}元,{{item.title}}</text>
+    </view>
+  </view>
+  <view  tt:if="{{item.type==0}}" class="cu-item text-grey cuIcon-evaluate_fill">
+    <view class="content bg-green shadow-blur">
+      <text>您在本店充值了 {{item.money}}元</text>
+    </view>
+  </view>
+</view>
+
